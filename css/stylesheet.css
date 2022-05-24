@@ -4,8 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    height: 100%;
+}
 body{
-    height: 100vh;
     background: linear-gradient(
       to bottom,
       #009688 0%,
@@ -24,12 +26,12 @@ body{
 }
 .col-4 {
     background-color: aqua;
-    height: 500px;
+    height: 850px;
 }
 .col-8 {
-    background-color: salmon;
-    height: 500px;
+    height: 850px;
     border-left: 1px solid #d6d6d6;
+    background-color: salmon;
 }
 /* GENERAL SETTINGS COL */
 .gen-col {
@@ -46,5 +48,13 @@ body{
 }
 .resume-chat-col {
     background-color: #fff;
-    height: 500px;
+    height: calc(100% - 215px);
+}
+.chatting-col {
+    background-image: url('/img/mine.jpg');
+    height: calc(100% - 160px);
+}
+.insert-text-col {
+    background-color: #f3eeea;
+    height: 80px;
 }
