@@ -9,8 +9,8 @@ body{
     background: linear-gradient(
       to bottom,
       #009688 0%,
-      #009688 23%,
-      #d9dbd5 23%,
+      #009688 17%,
+      #d9dbd5 17%,
       #d9dbd5 100%
     );
 }
@@ -29,9 +29,22 @@ body{
 .col-8 {
     background-color: salmon;
     height: 500px;
+    border-left: 1px solid #d6d6d6;
 }
-/* SETTINGS COL FOR USER AND CONTACT */
-.first-col-user{
-    background-color: beige;
-    height: 70px;
+/* GENERAL SETTINGS COL */
+.gen-col {
+    background-color: #eaeaea;
+    height: 80px;
+}
+.notification-col {
+    height: 90px;
+    background-color: #8edafc;
+}
+.search-col {
+    height: 45px;
+    background-color: #fafafa;
+}
+.resume-chat-col {
+    background-color: #fff;
+    height: 500px;
 }
