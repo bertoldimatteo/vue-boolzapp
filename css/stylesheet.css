@@ -9,15 +9,29 @@ body{
     background: linear-gradient(
       to bottom,
       #009688 0%,
-      #009688 15%,
-      #d9dbd5 15%,
+      #009688 23%,
+      #d9dbd5 23%,
       #d9dbd5 100%
     );
 }
 /* MAIN BLOCKS */
 .container {
     max-width: 1400px;
-    margin: 40px auto;
-    height: 500px;
+    margin: 30px auto;
+}
+.col-4, .col-8 {
+    padding: 0;
+}
+.col-4 {
     background-color: aqua;
+    height: 500px;
+}
+.col-8 {
+    background-color: salmon;
+    height: 500px;
+}
+/* SETTINGS COL FOR USER AND CONTACT */
+.first-col-user{
+    background-color: beige;
+    height: 70px;
 }
