@@ -137,7 +137,7 @@ p {
     width: 380px;
     height: 32px;
     padding: 0 5px;
-    font-size: 16px
+    font-size: 16px;
 }
 /* /SECTION SEARCH NAME USERS */
 
@@ -175,3 +175,6 @@ p {
     align-items: flex-start;
 }
 /* /SECTION RESUME CHAT */
+/* /ADVANCE SETTING COL LEFT */
+
+/* ADVANCE SETTING COL RIGHT */
