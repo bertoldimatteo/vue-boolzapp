@@ -29,9 +29,13 @@ body{
     border-left: 1px solid #d6d6d6;
 }
 /* GENERAL SETTINGS COL */
-.gen-col, .insert-text-col {
+.generic-col, .insert-text-col {
     background-color: #eaeaea;
     height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
 .notification-col {
     height: 90px;
@@ -52,3 +56,20 @@ body{
 .insert-text-col {
     background-color: #f3eeea;
 }
+.avatar {
+    min-width: 15%;
+    width: 15%;
+    border-radius: 50%;
+}
+i {
+    color: #b1b1b1;
+    width: 15px;
+}
+/* MESSAGE SETTINGS */
+.received-text {
+    background-color: #fff;
+};
+.sent-text {
+    background-color: #d5f9ba;
+};
+/* ADVANCE SETTING COL LEFT */
