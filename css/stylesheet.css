@@ -1,9 +1,9 @@
+/* GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     height: 100vh;
     background: linear-gradient(
@@ -13,4 +13,11 @@ body{
       #d9dbd5 15%,
       #d9dbd5 100%
     );
+}
+/* MAIN BLOCKS */
+.container {
+    max-width: 1400px;
+    margin: 40px auto;
+    height: 500px;
+    background-color: aqua;
 }
