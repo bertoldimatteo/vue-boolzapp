@@ -113,3 +113,27 @@ i {
     text-decoration-color: #697485;
 }
 /* /SECTION ALERT NOTIFICATION */
+
+/* SECTION SEARCH NAME USERS */
+.search-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.searchButton, .searchbar {
+    border: 1px solid #fafafa;
+    background-color: #fff;
+}
+.searchButton {
+    padding: 3px 20px;
+}
+.searchButton i {
+    color: #b6b9bb;
+}
+.searchbar {
+    width: 380px;
+    height: 32px;
+    padding: 0 5px;
+    font-size: 16px
+}
+/* /SECTION SEARCH NAME USERS */
