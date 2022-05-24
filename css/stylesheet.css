@@ -53,8 +53,8 @@ body{
     background-color: #f3eeea;
 }
 .avatar {
-    min-width: 15%;
-    width: 15%;
+    min-width: 40px;
+    width: 58px;
     border-radius: 50%;
 }
 i {
