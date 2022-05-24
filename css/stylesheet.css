@@ -144,10 +144,11 @@ p {
 /* SECTION RESUME CHAT */
 .resume-chat-col ul {
     padding: 0;
+    overflow-y: auto;
 }
 .resume-chat-col li {
     list-style-type: none;
-    height: 80px;
+    height: 79px;
     border-bottom: 1px solid #f5f5f5;
 }
 .contact-col, .contact-image-name {
