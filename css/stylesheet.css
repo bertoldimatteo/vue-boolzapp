@@ -58,7 +58,6 @@ body{
     border-radius: 50%;
 }
 i {
-    color: #b1b1b1;
     margin: 0 10px;
 }
 /* MESSAGE SETTINGS */
@@ -69,6 +68,8 @@ i {
     background-color: #d5f9ba;
 }
 /* ADVANCE SETTING COL LEFT */
+
+/* USER SECTION */
 .users {
     display: flex;
     justify-content: space-between;
@@ -79,3 +80,7 @@ i {
     display: flex;
     align-items: center;
 }
+.users i {
+    color: #b1b1b1;
+}
+/* /USER SECTION */
