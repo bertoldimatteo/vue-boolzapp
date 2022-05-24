@@ -23,18 +23,13 @@ body{
 }
 .col-4, .col-8 {
     padding: 0;
-}
-.col-4 {
-    background-color: aqua;
     height: 850px;
 }
 .col-8 {
-    height: 850px;
     border-left: 1px solid #d6d6d6;
-    background-color: salmon;
 }
 /* GENERAL SETTINGS COL */
-.gen-col {
+.gen-col, .insert-text-col {
     background-color: #eaeaea;
     height: 80px;
 }
@@ -56,5 +51,4 @@ body{
 }
 .insert-text-col {
     background-color: #f3eeea;
-    height: 80px;
 }
