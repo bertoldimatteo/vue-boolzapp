@@ -148,7 +148,7 @@ p {
 }
 .resume-chat-col li {
     list-style-type: none;
-    height: 79px;
+    height: 75px;
     border-bottom: 1px solid #f5f5f5;
 }
 .contact-col, .contact-image-name {
@@ -174,3 +174,4 @@ p {
     display: flex;
     align-items: flex-start;
 }
+/* /SECTION RESUME CHAT */
