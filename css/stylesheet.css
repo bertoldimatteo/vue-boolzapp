@@ -188,7 +188,7 @@ p {
 
 /* ADVANCE SETTING COL RIGHT */
 
-/* INPUST TEXT FORM */
+/* INPUT TEXT FORM */
 .insert-text-col {
     display: flex;
     align-items: center;
@@ -204,3 +204,4 @@ p {
     border: none;
     padding: 10px;
 }
+/* /INPUT TEXT FORM */

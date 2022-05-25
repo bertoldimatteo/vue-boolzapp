@@ -93,7 +93,7 @@
 
                 <div class="col chatting-col">
                     <div class="chat-container" v-for="obj in contacts[count].messages">
-                        <p >{{obj.message}}</p>
+                        <p :class="{'received-text' : obj.status === 'received', 'sent-text' : obj.status === 'sent'}">{{obj.message}}</p>
                     </div>    
                 </div>
 
