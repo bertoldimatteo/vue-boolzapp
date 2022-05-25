@@ -167,9 +167,11 @@ let app = new Vue({
         ]
     },
     methods: {
-        showMessage(i){
-            count = i;
-            console.log(count);
-        }
+        showMessage(index){
+            this.count = index;
+        },
+        getImg(index){
+            return `img/avatar${index}.jpg`;
+        },
     },
 })

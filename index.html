@@ -57,7 +57,7 @@
                     <ul>
                         <li class="contact-col" v-for="(obj, index) in contacts" @click="showMessage(index)">
                             <div class="contact-image-name">
-                                <img :src="'img/avatar' + obj.avatar + '.jpg'" class="avatar" alt="">
+                                <img :src="getImg(obj.avatar)" class="avatar" alt="">
                                 <div class="description">
                                     <p class="contact-name">{{obj.name}}</p>
                                     <small class="greySmallText">Ultimo messaggio inviato</small>
@@ -77,7 +77,7 @@
                 <!-- user top right  -->
                 <div class="col generic-col users">
                     <div class="contact-image-name">
-                        <img src="img/avatar_1.jpg" class="avatar" alt="">
+                        <img :src="getImg(contacts[count].avatar)" class="avatar" alt="">
                         <div class="description">
                             <p class="contact-name">Michele</p>
                             <small class="greySmallText">Ultimo messaggio inviato</small>
@@ -92,13 +92,6 @@
                 <!-- /user top right  -->
 
                 <div class="col chatting-col">
-                    <ul>
-                        <li v-for="messages[count].message">
-                            <div>
-                                {{message}}
-                            </div>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="col insert-text-col users">
