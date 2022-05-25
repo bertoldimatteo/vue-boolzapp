@@ -59,8 +59,8 @@
                             <div class="contact-image-name">
                                 <img :src="'img/avatar' + obj.avatar + '.jpg'" class="avatar" alt="">
                                 <div class="description">
-                                    <p class="contact-name" @click="click()">{{obj.name}}</p>
-                                    <small class="greySmallText" v-for="messages in obj.messages">{{messages.message}}</small>
+                                    <p class="contact-name">{{obj.name}}</p>
+                                    <small class="greySmallText">Ultimo messaggio inviato</small>
                                 </div>
                             </div>
                             <div class="time">
@@ -91,7 +91,15 @@
                 </div>
                 <!-- /user top right  -->
 
-                <div class="col chatting-col"></div>
+                <div class="col chatting-col">
+                    <ul>
+                        <li v-for="obj in contacts">
+                            <div v-for="item in obj.messages">
+                                {{item.message}}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
 
                 <div class="col insert-text-col users">
                     <a href="#"><i class="fa-regular fa-face-smile fa-lg"></i></a>
