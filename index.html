@@ -55,7 +55,7 @@
                 <!-- resume contact search -->
                 <div class="col resume-chat-col">
                     <ul>
-                        <li class="contact-col" v-for="(obj, index) in contacts">
+                        <li class="contact-col" v-for="(obj, index) in contacts" @click="showMessage(index)">
                             <div class="contact-image-name">
                                 <img :src="'img/avatar' + obj.avatar + '.jpg'" class="avatar" alt="">
                                 <div class="description">
@@ -93,9 +93,9 @@
 
                 <div class="col chatting-col">
                     <ul>
-                        <li v-for="(obj, index) in contacts">
-                            <div v-for="item in obj.messages">
-                                {{item.message}}
+                        <li v-for="messages[count].message">
+                            <div>
+                                {{message}}
                             </div>
                         </li>
                     </ul>

@@ -1,6 +1,7 @@
 let app = new Vue({
     el: '#root',
     data: {
+        count: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -166,5 +167,9 @@ let app = new Vue({
         ]
     },
     methods: {
+        showMessage(i){
+            count = i;
+            console.log(count);
+        }
     },
 })
