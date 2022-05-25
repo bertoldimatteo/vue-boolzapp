@@ -92,6 +92,9 @@
                 <!-- /user top right  -->
 
                 <div class="col chatting-col">
+                    <div class="chat-container" v-for="obj in contacts[count].messages">
+                        <p >{{obj.message}}</p>
+                    </div>    
                 </div>
 
                 <div class="col insert-text-col users">
