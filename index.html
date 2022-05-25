@@ -93,7 +93,7 @@
 
                 <div class="col chatting-col">
                     <ul>
-                        <li v-for="obj in contacts">
+                        <li v-for="(obj, index) in contacts">
                             <div v-for="item in obj.messages">
                                 {{item.message}}
                             </div>
