@@ -59,8 +59,8 @@
                             <div class="contact-image-name">
                                 <img :src="'img/avatar' + obj.avatar + '.jpg'" class="avatar" alt="">
                                 <div class="description">
-                                    <p class="contact-name">{{obj.name}}</p>
-                                    <small class="greySmallText">Ultimo messaggio inviato</small>
+                                    <p class="contact-name" @click="click()">{{obj.name}}</p>
+                                    <small class="greySmallText" v-for="messages in obj.messages">{{messages.message}}</small>
                                 </div>
                             </div>
                             <div class="time">
