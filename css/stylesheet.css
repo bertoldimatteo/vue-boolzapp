@@ -118,6 +118,9 @@ p {
     color: #697485;
     text-decoration-color: #697485;
 }
+.notification-col:hover {
+    background-color: #25b5f6;
+}
 /* /SECTION ALERT NOTIFICATION */
 
 /* SECTION SEARCH NAME USERS */
@@ -176,6 +179,9 @@ p {
 .time {
     display: flex;
     align-items: flex-start;
+}
+.contact-col:hover {
+    background-color: #e9ebeb;
 }
 /* /SECTION RESUME CHAT */
 /* /ADVANCE SETTING COL LEFT */
