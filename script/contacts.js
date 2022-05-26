@@ -198,10 +198,9 @@ let app = new Vue({
             };
             this.contacts[this.count].messages.push(newMessage);
             this.newText= '';
-            this.newMessage = true;
-            setTimeout(function(){
-                addReceivedMessage();
-            },1000);
+            setTimeout(() => {
+                addReceivedMessage() 
+              }, 1000);
         },
         addReceivedMessage(){
             const DateTime = luxon.DateTime;
@@ -212,7 +211,6 @@ let app = new Vue({
                 status: 'received'
             };
             this.contacts[this.count].messages.push(newMessage);
-            this.newMessage = false;
         },
     },
 })
