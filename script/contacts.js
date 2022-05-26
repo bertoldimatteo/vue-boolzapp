@@ -189,16 +189,13 @@ let app = new Vue({
             return DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat('HH:mm');
         },
         addMessage(){
-            // const newMessage = {
-            //     date: 'now',
-            //     message: this.newText,
-            //     status: 'sent'
-            // };
-            // this.contacts.messages.push(newMessage);
-            // this.newText= '';
-            this.newText;
-            console.log(this.newText);
-            this.newText = '';
+            const newMessage = {
+                date: 'now',
+                message: this.newText,
+                status: 'sent'
+            };
+            this.contacts[this.count].messages.push(newMessage);
+            this.newText= '';
         }
     },
 })
