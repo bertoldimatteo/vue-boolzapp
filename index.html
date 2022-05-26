@@ -95,9 +95,9 @@
 
                 <div class="col chatting-col">
                     <div class="chat-container" v-for="obj in contacts[count].messages">
-                        <div :class="{'received-text' : obj.status === 'received', 'sent-text' : obj.status === 'sent'}">
+                        <div class="textChat" :class="{'received-text' : obj.status === 'received', 'sent-text' : obj.status === 'sent'}">
                             <p>{{obj.message}}</p>
-                            <small>{{getTime(obj)}}</small>
+                            <small class="timeMessage">{{getTime(obj)}}</small>
                         </div>
                     </div>    
                 </div>

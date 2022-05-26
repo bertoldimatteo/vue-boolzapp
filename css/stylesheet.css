@@ -69,18 +69,10 @@ p {
 /* MESSAGE SETTINGS */
 .received-text {
     background-color: #fff;
-    max-width: 340px;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 10px;
     align-self: flex-start;
 }
 .sent-text {
     background-color: #d5f9ba;
-    max-width: 340px;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 10px;
     align-self: flex-end;
 }
 /* ADVANCE SETTING COL LEFT */
@@ -205,6 +197,22 @@ p {
 .chat-container {
     display: flex;
     flex-direction: column;
+}
+.textChat {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.textChat p {
+    margin-bottom: 10px;
+}
+.timeMessage {
+    font-size: 10px;
+    color: #b1b1b1;
+    align-self: flex-end;
 }
 /* /TEXT CHATTING FORM */
 
