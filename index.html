@@ -82,7 +82,7 @@
                         <img :src="getImg(contacts[count].avatar)" class="avatar" alt="">
                         <div class="description">
                             <p class="contact-name">{{contacts[count].name}}</p>
-                            <small class="greySmallText">Ultimo accesso oggi alle</small>
+                            <small class="greySmallText">Ultimo accesso oggi alle{{getHour(contacts[count])}}</small>
                         </div>
                     </div>
                     <div class="users-icons">
