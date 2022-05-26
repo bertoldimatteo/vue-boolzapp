@@ -198,7 +198,6 @@ let app = new Vue({
             // this.newText= '';
             this.newText;
             console.log(this.newText);
-            console.log(this.contacts);
             this.newText = '';
         }
     },
