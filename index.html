@@ -62,7 +62,7 @@
                                 <img :src="getImg(obj.avatar)" class="avatar" alt="">
                                 <div class="description">
                                     <p class="contact-name">{{obj.name}}</p>
-                                    <small class="greySmallText">Ultimo messaggio inviato</small>
+                                    <small class="greySmallText">{{getLastMess(obj)}}</small>
                                 </div>
                             </div>
                             <div class="time">

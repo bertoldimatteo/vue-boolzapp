@@ -173,6 +173,10 @@ let app = new Vue({
         getImg(index){
             return `img/avatar${index}.jpg`;
         },
+        getLastMess(obj){
+            const mess = obj.messages[obj.messages.length - 1];
+            return mess.message;
+        },
         getHour(obj){
             const DateTime = luxon.DateTime;
             const mess = obj.messages[obj.messages.length - 1];
