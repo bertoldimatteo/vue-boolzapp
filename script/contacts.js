@@ -198,8 +198,9 @@ let app = new Vue({
             };
             this.contacts[this.count].messages.push(newMessage);
             this.newText= '';
+            const test = this.addReceivedMessage()
             setTimeout(() => {
-                addReceivedMessage() 
+                test
               }, 1000);
         },
         addReceivedMessage(){
