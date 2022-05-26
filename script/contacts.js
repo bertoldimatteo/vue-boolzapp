@@ -1,7 +1,6 @@
 let app = new Vue({
     el: '#root',
     data: {
-        count: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -164,7 +163,9 @@ let app = new Vue({
                     }
                 ],
             }
-        ]
+        ],
+        count: 0,
+        newText: '',
     },
     methods: {
         showMessage(index){
@@ -187,5 +188,18 @@ let app = new Vue({
             const mess = obj.messages[obj.messages.length - 1];
             return DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat('HH:mm');
         },
+        addMessage(){
+            // const newMessage = {
+            //     date: 'now',
+            //     message: this.newText,
+            //     status: 'sent'
+            // };
+            // this.contacts.messages.push(newMessage);
+            // this.newText= '';
+            this.newText;
+            console.log(this.newText);
+            console.log(this.contacts);
+            this.newText = '';
+        }
     },
 })

@@ -82,7 +82,7 @@
                         <img :src="getImg(contacts[count].avatar)" class="avatar" alt="">
                         <div class="description">
                             <p class="contact-name">{{contacts[count].name}}</p>
-                            <small class="greySmallText">Ultimo messaggio inviato</small>
+                            <small class="greySmallText">Ultimo accesso oggi alle</small>
                         </div>
                     </div>
                     <div class="users-icons">
@@ -104,7 +104,7 @@
 
                 <div class="col insert-text-col users">
                     <a href="#"><i class="fa-regular fa-face-smile fa-lg"></i></a>
-                    <input type="text" placeholder="Scrivi un messaggio" id="#">
+                    <input type="text" placeholder="Scrivi un messaggio" v-model="newText" @keyup.enter="addMessage()">
                     <a href="#"><i class="fa-solid fa-microphone fa-lg"></i></a>
                 </div>
             </div>
