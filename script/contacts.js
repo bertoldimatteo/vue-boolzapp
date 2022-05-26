@@ -189,8 +189,10 @@ let app = new Vue({
             return DateTime.fromFormat(mess.date, "dd/MM/yyyy HH:mm:ss").toFormat('HH:mm');
         },
         addMessage(){
+            const DateTime = luxon.DateTime;
+            const setTime = DateTime.now().toFormat("dd/MM/yyyy HH:mm:ss");
             const newMessage = {
-                date: 'now',
+                date: setTime,
                 message: this.newText,
                 status: 'sent'
             };
