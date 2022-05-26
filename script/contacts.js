@@ -166,7 +166,6 @@ let app = new Vue({
         ],
         count: 0,
         newText: '',
-        newMessage: false,
     },
     methods: {
         showMessage(index){
@@ -200,7 +199,9 @@ let app = new Vue({
             this.contacts[this.count].messages.push(newMessage);
             this.newText= '';
             this.newMessage = true;
-            console.log(this.newMessage);
+            setTimeout(function(){
+                addReceivedMessage();
+            },1000);
         },
         addReceivedMessage(){
             const DateTime = luxon.DateTime;
@@ -212,15 +213,6 @@ let app = new Vue({
             };
             this.contacts[this.count].messages.push(newMessage);
             this.newMessage = false;
-
         },
     },
-    created() {
-        const self = this;
-        if ( self.newMessage = true ){
-            setTimeout(function(){
-                self.addReceivedMessage();
-            },1000);
-        }
-    }
 })
