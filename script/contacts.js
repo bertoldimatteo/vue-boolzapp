@@ -177,6 +177,11 @@ let app = new Vue({
             const mess = obj.messages[obj.messages.length - 1];
             return mess.message;
         },
+        getTime(obj){
+            const DateTime = luxon.DateTime;
+            const mess = obj.date;
+            return DateTime.fromFormat(mess, "dd/MM/yyyy HH:mm:ss").toFormat('HH:mm');
+        },
         getHour(obj){
             const DateTime = luxon.DateTime;
             const mess = obj.messages[obj.messages.length - 1];
