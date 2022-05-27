@@ -50,14 +50,14 @@
                 <!-- third col left regarding search -->
                 <div class="col search-col">
                     <button class="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input class="searchbar" type="search" placeholder="Cerca o inizia una nuova chat" id="nameSearch" name="#">
+                    <input class="searchbar" type="text" v-model="filterUser" @keyup="filter()" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <!-- /third col left regarding search -->
 
                 <!-- resume contact search -->
                 <div class="col resume-chat-col">
-                    <ul>
-                        <li class="contact-col" v-for="(obj, index) in contacts" @click="showMessage(index)">
+                    <ul id="contactList">
+                        <li v-show="obj.visible" class="contact-col" v-for="(obj, index) in contacts" @click="showMessage(index)">
                             <div class="contact-image-name">
                                 <img :src="getImg(obj.avatar)" class="avatar" alt="">
                                 <div class="description">

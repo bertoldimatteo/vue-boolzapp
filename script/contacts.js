@@ -166,6 +166,7 @@ let app = new Vue({
         ],
         count: 0,
         newText: '',
+        filterUser: '',
     },
     methods: {
         showMessage(index){
@@ -199,10 +200,10 @@ let app = new Vue({
             this.contacts[this.count].messages.push(newMessage);
             this.newText= '';
             setTimeout(() => {
-                this.addReceivedMessage()
+                this.addReceivedMessage(this.contacts.count)
               }, 1000);
         },
-        addReceivedMessage(){
+        addReceivedMessage(user){
             const DateTime = luxon.DateTime;
             const setTime = DateTime.now().toFormat("dd/MM/yyyy HH:mm:ss");
             const newMessage = {
@@ -212,5 +213,6 @@ let app = new Vue({
             };
             this.contacts[this.count].messages.push(newMessage);
         },
-    },
+
+        },
 })
