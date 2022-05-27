@@ -213,6 +213,12 @@ let app = new Vue({
             };
             this.contacts[this.count].messages.push(newMessage);
         },
+        filter(obj){
+            console.log(this.filterUser);
+            if ( this.filterUser.includes(obj.name) ){
+                obj.visible = false;
+            } 
+        }
 
         },
 })
