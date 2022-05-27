@@ -214,7 +214,14 @@ let app = new Vue({
             this.contacts[this.count].messages.push(newMessage);
         },
         filter(){
-            console.log(this.filterUser);
+            this.filterUser = this.filterUser.toLowerCase();
+            this.contacts.forEach(contact => {
+                if (!contact.name.toLowerCase().includes(this.filterUser) && this.filterUser !== ' ' ){
+                    contact.visible = false;
+                } else if (this.filterUser !== null){
+                    contact.visible = true;
+                }
+            });
         }
 
         },
